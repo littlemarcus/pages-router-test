@@ -23,9 +23,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
 	return {
-		// Pre-render product '1' at build time
 		paths: [{ params: { id: "1" } }],
-		// 'blocking' ensures new products are generated on their first request
 		fallback: "blocking",
 	};
 }

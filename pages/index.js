@@ -18,6 +18,5 @@ export async function getStaticProps() {
 		props: {
 			generatedAt: new Date().toISOString(),
 		},
-		// We omit the `revalidate` property to rely entirely on on-demand revalidation.
 	};
 }
